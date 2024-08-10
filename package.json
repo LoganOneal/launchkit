@@ -40,7 +40,9 @@
     "@sentry/nextjs": "8.22.0",
     "@tailwindcss/typography": "0.5.13",
     "bcryptjs": "2.4.3",
+    "class-variance-authority": "^0.7.0",
     "classnames": "2.5.1",
+    "clsx": "^2.1.1",
     "cookies-next": "4.2.1",
     "currency-symbol-map": "5.1.0",
     "formik": "2.4.6",
@@ -63,6 +65,8 @@
     "stripe": "16.6.0",
     "svix": "1.27.0",
     "swr": "2.2.5",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss-animate": "^1.0.7",
     "yup": "1.4.0",
     "zod": "3.23.8"
   },

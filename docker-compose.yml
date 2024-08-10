@@ -3,8 +3,8 @@ services:
     image: postgres
     restart: always
     environment:
-      POSTGRES_PASSWORD: admin
+      POSTGRES_PASSWORD: password
       POSTGRES_USER: admin
-      POSTGRES_DB: saas-starter-kit
+      POSTGRES_DB: launchkit
     ports:
       - 5432:5432
