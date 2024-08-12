@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import Image from "next/image"
-
+import TeamDropdown from "@/components/shared/TeamDropdown"
 import { Button } from "@/components/ui/button"
 import {
     Card,
@@ -50,7 +50,7 @@ export default function DashboardPage() {
             <div className="hidden flex-col md:flex">
                 <div className="border-b">
                     <div className="flex h-16 items-center px-4">
-                        <TeamSwitcher />
+                        <TeamDropdown />
                         <MainNav className="mx-6" />
                         <div className="ml-auto flex items-center space-x-4">
                             <Search />
