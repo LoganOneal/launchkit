@@ -22,9 +22,9 @@ const UserNavigation = ({ activePathname }: NavigationProps) => {
   const menus: MenuItem[] = [
     {
       name: 'Teams',
-      href: '/newdashboard',
+      href: '/teams',
       icon: Home,
-      active: activePathname === '/newdashboard',
+      active: activePathname === '/teams',
     },
     {
       name: t('Account'),
