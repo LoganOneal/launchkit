@@ -12,19 +12,19 @@ const UserNavigation = ({ activePathname }: NavigationProps) => {
 
   const menus: MenuItem[] = [
     {
-      name: t('all-teams'),
-      href: '/teams',
+      name: 'Teams',
+      href: '/newdashboard',
       icon: RectangleStackIcon,
-      active: activePathname === '/teams',
+      active: activePathname === '/newdashboard',
     },
     {
-      name: t('account'),
+      name: t('Account'),
       href: '/settings/account',
       icon: UserCircleIcon,
       active: activePathname === '/settings/account',
     },
     {
-      name: t('security'),
+      name: t('Security'),
       href: '/settings/security',
       icon: ShieldCheckIcon,
       active: activePathname === '/settings/security',
