@@ -31,6 +31,7 @@ const NavigationItems = ({ menus }: NavigationItemsProps) => {
           href={menu.href}
           className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
         >
+          {menu.icon && <menu.icon className="h-4 w-4" />}
           {menu.name}
         </Link>
       ))}

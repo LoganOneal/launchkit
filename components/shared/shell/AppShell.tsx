@@ -8,7 +8,6 @@ import { useRouter } from 'next/navigation';
 import TeamDropdown from "@/components/shared/TeamDropdown"
 import Image from "next/image"
 import { UserNav } from "@/components/shared/user-nav"
-import { MainNav } from "@/components/shared/main-nav"
 import Link from "next/link"
 import {
   Bell,
@@ -70,9 +69,7 @@ export default function AppShell({ children }) {
             </Button>
           </div>
           <div className="flex-1">
-          <Navigation />
-
-          <MainNav className="mx-6" />
+            <Navigation />
           </div>
           <div className="mt-auto p-4">
             <Card x-chunk="dashboard-02-chunk-0">

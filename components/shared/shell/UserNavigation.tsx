@@ -7,6 +7,15 @@ import { useTranslation } from 'next-i18next';
 import NavigationItems from './NavigationItems';
 import { MenuItem, NavigationProps } from './NavigationItems';
 
+import {
+  Home,
+  LineChart,
+  Package,
+  ShoppingCart,
+  Users,
+} from "lucide-react"
+import { Badge } from "@/components/ui/badge"
+
 const UserNavigation = ({ activePathname }: NavigationProps) => {
   const { t } = useTranslation('common');
 
@@ -14,7 +23,7 @@ const UserNavigation = ({ activePathname }: NavigationProps) => {
     {
       name: 'Teams',
       href: '/newdashboard',
-      icon: RectangleStackIcon,
+      icon: Home,
       active: activePathname === '/newdashboard',
     },
     {
