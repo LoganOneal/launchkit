@@ -1,10 +1,5 @@
-import Link from 'next/link';
-import classNames from 'classnames';
-import {
-  Tabs,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs"
+import Link from "next/link"
+
 export interface MenuItem {
   name: string;
   href: string;
@@ -29,21 +24,18 @@ interface NavigationItemProps {
 
 const NavigationItems = ({ menus }: NavigationItemsProps) => {
   return (
-    <>
-      <Tabs defaultValue="/newdashboard" className="space-y-4">
-        <TabsList>
-          {menus.map((menu) => (
-            <TabsTrigger
-              key={menu.name}
-              value={menu.href}
-            >
-              {menu.name}
-            </TabsTrigger>
-          ))}
-        </TabsList>
-      </Tabs>
-    </>
-  );
+    <nav className="grid items-start px-2 text-sm font-medium lg:px-4">
+      {menus.map((menu) => (
+        <Link
+          key={menu.href}
+          href={menu.href}
+          className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
+        >
+          {menu.name}
+        </Link>
+      ))}
+    </nav>
+  )
 };
 
 
